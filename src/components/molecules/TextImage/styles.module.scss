@@ -6,6 +6,10 @@
   gap: 32px;
   align-items: center;
 
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+
   .image {
     border-radius: 50%;
   }

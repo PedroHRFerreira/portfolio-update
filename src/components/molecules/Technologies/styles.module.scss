@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  cursor: url("/icons8-cursor.svg") 12 12, auto;
+
+  .link {
+    cursor: url("/icons8-cursor.svg") 12 12, auto;
+  }
+
+  .image {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    cursor: url("/icons8-cursor.svg") 12 12, auto;
+
+    .button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      &__link {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.05)
+        );
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: url("/icons8-cursor.svg") 12 12, auto;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300%;
+          height: 300%;
+          background: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.2) 10%,
+            transparent 10%
+          );
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        &:hover {
+          border-color: rgba(255, 255, 255, 0.5);
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1)
+          );
+          transform: scale(1.05);
+
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    cursor: url("/icons8-cursor.svg") 12 12, auto;
+
+    &:hover {
+      opacity: 2;
+    }
+  }
+}

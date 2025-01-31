@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: white;
+  max-width: 680px;
+  height: auto;
+  padding: 46px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.modalContent {
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.badge {
+  background: #141414;
+  color: rgb(201, 199, 199);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #2e2c2c;
+  transition: 0.3s ease;
+  cursor: url("/icons8-cursor.svg") 12 12, auto;
+}
+
+.badge:hover {
+  background: #222;
+  color: white;
+}
+
+.openButton {
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: url("/icons8-cursor.svg") 12 12, auto;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.openButton:hover {
+  background: #218838;
+}
+
+.closeButton {
+  position: relative;
+  left: 80%;
+  bottom: 35px;
+  background: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: url("/icons8-cursor.svg") 12 12, auto;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.closeButton:hover {
+  background: #c92a2a;
+}
+
+@media (max-width: 768px) {
+  .closeButton {
+    left: 25%;
+  }
+}

@@ -22,4 +22,8 @@
     height: 0.1px;
     border-color: #2e2c2c;
   }
+
+  @media (max-width: 486px) {
+    top: 100px;
+  }
 }

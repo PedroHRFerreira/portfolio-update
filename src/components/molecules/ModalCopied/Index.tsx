@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 const MoleculeModalCopied = ({ isOpen = false, closeModal = () => {} }) => {
   const pedroHenrique = {
     code: ["TypeScript", "JavaScript", "PHP", "HTML", "CSS", "Sass"],
-    askMeAbout: ["Web Dev", "Vue.js", "React", "Nuxt.js", "Next.js"],
+    askMeAbout: ["Web Dev", "Vue.js", "React", "Nuxt.js", "Next.js", "Laravel"],
   };
 
   if (!isOpen) return null;
